@@ -27,4 +27,5 @@ def vivomorto():
     print ("2: I gonna die now, bye")
 
 #chamar função
-vivomorto() 
+vivomorto()
+ 
