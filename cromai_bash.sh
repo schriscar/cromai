@@ -8,8 +8,6 @@
 # schriscar@gmail.com
 #
 
-[ -e "cromai.log" ] && rm cromai.log
-
 laco_infinito()
 	while true; do
 	# Procura por pid python ativo e verifica se um deles corresponde ao pid gravado no arquivo "pid". 
@@ -22,8 +20,3 @@ laco_infinito()
 		sleep 2
 	fi
 	done
-# Cria arquivo "pid" caso ele não exista.
-[[ ! -e "pid" ]] 2>> cromai.log && touch pid
-
-# Chama função
-laco_infinito 2>> cromai.log
